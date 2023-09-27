@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Account Verification</title>
+</head>
+<style>
+    .account-verify-button{
+        padding: 6px 40px;
+        display: inline-block;
+        background: #ff4c3b;
+        color: #ffffff;
+        text-decoration: none !important;
+        font-size: 125%;
+        border-radius: 4px;
+        line-height: 200%;
+        border: 2px solid #ff4c3b;
+    }
+
+</style>
+<body style="font-family:Century Gothic;">
+    <div style="background-color: #f4f6f9;">
+        <div >
+            <br/>
+            <img style="display: flex; margin: auto;" src="http://54.67.88.195/assets/images/icon/xshop.png" alt="Company Logo" width="150px" height="55px">
+            <br/>
+        </div>
+
+        <div style="margin: 10px 160px;background-color: white;">
+            <div style="border: 3px solid #4b9ee4; border-radius: 10px; padding: 15px; text-align: center;">
+                
+                <h1 style="text-align: center;">Thanks for signing up with xShop</h1>
+                <p>To activate your account, please click the activation link below:</p>
+                <button style="padding: 6px 40px;
+                display: inline-block;
+                background: #ff4c3b;
+                color: #ffffff;
+                text-decoration: none !important;
+                font-size: 125%;
+                border-radius: 4px;
+                line-height: 200%;
+                border: 2px solid #ff4c3b;" type="submit">
+                    <a style="text-decoration: none;color:black;" href='{{ protocol }}{{ current_site }}{{ api }}{{ unique_id }}'>Verify Account</a>
+                </button>
+                <br/>
+
+                <p>Your OTP (One-Time Password) is: <strong style="font-size: large;">{{Gotp}}</strong></p>
+                <p>Please enter this OTP to complete the verification process.</p>
+
+                <h4>To easily log in later, save this URL:</h4>
+                <p style="font-size: large;">http://54.67.88.195/core/login</p>
+                <br/>
+                <p>If you have any questions or need assistance, please contact our support team at support@example.com.</p>
+                
+            </div>
+            <div style="padding-left: 10px;">
+                <p>Best regards,</p>
+                <p>The xShop Team</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
